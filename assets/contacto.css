@@ -1,0 +1,85 @@
+:root{
+    --color-azul:#2514dc;
+    --color-negro: #030209;
+    --color-blanco: #f0f8ff;
+}
+
+#contacto{
+    font-family: 'Teko', sans-serif;
+    color:var(--color-blanco);
+    text-align: center;
+}
+
+.contacto__titulo{
+    font-size: 30px;
+}
+
+.formulario__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagen__contacto{
+    display: none;
+}
+.imagen__correo{
+    width: 80%;
+    height: auto;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 50%;
+    align-items: center;
+}
+
+.formulario input{
+    border: var(--color-azul) 2px solid;
+    background: transparent;
+    font-family: 'Teko', sans-serif;
+    color: var(--color-blanco);
+    width: 100%;
+    height: 10%;
+}
+
+.formulario textarea{
+    border: var(--color-azul) 2px solid;
+    background: transparent;
+    font-family: 'Teko', sans-serif;
+    color: var(--color-blanco);
+    width: 100%;
+    height: 50%;
+}
+
+.send_message{
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    border: var(--color-azul) solid 5px;
+    font-family: 'Teko', sans-serif;
+    width: 50%;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.send_message:hover{
+    background: var(--color-negro);
+}
+
+@media screen and (min-width: 600px) {
+    .contacto__titulo{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .imagen__contacto{
+        display: flex;
+        width: 50%;
+    }
+    .contacto__titulo{
+        font-size: 50px;
+    }
+}

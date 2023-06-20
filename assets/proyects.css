@@ -1,0 +1,131 @@
+:root{
+    --color-azul:#2514dc;
+    --color-negro: #030209;
+    --color-blanco: #f0f8ff;
+}
+
+
+.proyects{
+    text-align: center;
+    padding: 10px;
+}
+.proyects__title{
+    font-size: 30px;
+}
+
+.proyectos__padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    
+}
+.proyectos__container{
+    width: 50%;
+    transition: 1s;
+}
+.proyectos__container:hover{
+    transition: 1s;
+    width: 60%;
+}
+
+.imagen__proyecto{
+    width: 100%;
+}
+
+.titulo__proyecto{
+    font-size: 20px;
+    margin: 5px;
+}
+.proyecto__descripcion{
+    font-size: 10px;
+}
+
+.botones__proyecto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.boton__codigo{
+    background-color: transparent;
+    border: none;
+}
+.boton__pagina{
+    background: transparent;
+    border: none;
+}
+.boton__codigo a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    background:var(--color-azul);
+    color: var(--color-blanco);
+    border: 2px solid var(--color-azul);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    z-index: 1;
+    overflow: hidden;
+    font-family: 'Teko', sans-serif;
+}
+
+.boton__codigo a:hover{
+    background-color: var(--color-negro);
+    transition: 1s;
+}
+
+.boton__pagina a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    background:var(--color-negro);
+    color: var(--color-blanco);
+    border: 2px solid var(--color-azul);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    font-family: 'Teko', sans-serif;
+}
+
+.boton__pagina a:hover{
+    background-color: var(--color-azul);
+    transition: .5s;
+}
+
+@media screen and (min-width: 600px) {
+    .proyects__title{
+        font-size: 40px;
+    }
+    .titulo__proyecto{
+        font-size: 25px;
+    }
+    .proyecto__descripcion{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .proyects__title{
+        font-size: 50px;
+    }    
+
+    .titulo__proyecto{
+        font-size: 30px;
+    }
+    .proyecto__descripcion{
+        font-size: 20px;
+    }
+    
+}

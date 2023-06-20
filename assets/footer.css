@@ -1,0 +1,15 @@
+:root{
+    --color-azul:#2514dc;
+    --color-negro: #030209;
+    --color-blanco: #f0f8ff;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p{
+    margin: 5px;
+}

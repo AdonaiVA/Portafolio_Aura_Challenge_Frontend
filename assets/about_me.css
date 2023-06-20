@@ -1,0 +1,48 @@
+:root{
+    --color-azul:#2514dc;
+    --color-negro: #030209;
+    --color-blanco: #f0f8ff;
+}
+.about__me{
+    font-family: 'Teko', sans-serif;
+    color:var(--color-blanco);
+}
+
+.my__biography{
+    padding: 10px;
+    text-align: justify;
+}
+
+.my__biography h2{
+    color: var(--color-blanco); 
+    font-size: 30px;
+}
+
+.my__biography p{
+    color: var(--color-blanco);
+    font-size: 15px;
+}
+
+@media screen and (min-width: 600px) {
+    .my__biography h2{
+        color: var(--color-blanco); 
+        font-size: 40px;
+    }
+    
+    .my__biography p{
+        color: var(--color-blanco);
+        font-size: 20px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .my__biography h2{
+        color: var(--color-blanco); 
+        font-size: 50px;
+    }
+    
+    .my__biography p{
+        color: var(--color-blanco);
+        font-size: 25px;
+}
+}
