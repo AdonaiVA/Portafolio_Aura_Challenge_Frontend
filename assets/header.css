@@ -27,6 +27,11 @@
 }
 .items__nav{
     list-style: none;
+    transition: .5s;
+}
+.items__nav:hover{
+    color: var(--color-azul);
+    transition: .5s;
 }
 .items__nav a{
     font-size: 15px;
