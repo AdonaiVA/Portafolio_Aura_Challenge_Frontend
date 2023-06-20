@@ -27,18 +27,20 @@
 }
 .items__nav{
     list-style: none;
-    transition: .5s;
-}
-.items__nav:hover{
-    color: var(--color-azul);
-    transition: .5s;
 }
 .items__nav a{
     font-size: 15px;
     text-decoration: none;
     list-style: none;
     color: var(--color-blanco);
+    transition: .5s;
 }
+
+.items__nav a:hover{
+    color: var(--color-azul);
+    transition: .5s;
+}
+
 .items__nav:nth-child(1){
     display: none;
 }
